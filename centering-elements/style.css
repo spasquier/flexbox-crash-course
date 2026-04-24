@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  background: #f4f4f4;
+  /** justify-content is always in the main axis **/
+  /* justify-content: end; */
+  /** align-items is always in the cross axis **/
+  /* align-items: start; */
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background: #254de4;
+  color: #fff;
+  margin: 10px;
+
+  /** Centering the text inside the item, a flexbox item can be also a container **/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

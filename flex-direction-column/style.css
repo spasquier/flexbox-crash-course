@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  background: #f4f4f4;
+  /** Always in the main axis **/
+  justify-content: end; /** try start, center, end, space-around, space-evenly **/
+  /** Always in the cross axis **/
+  align-items: start;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background: #254de4;
+  color: #fff;
+  margin: 10px;
+}

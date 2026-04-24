@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  background: #f4f4f4;
+  /* flex-wrap: wrap; */
+  /** justify-content is always in the main axis **/
+  /* justify-content: end; */
+  /** align-items is always in the cross axis **/
+  /* align-items: start; */
+}
+
+.item {
+  flex-basis: 100px;
+  flex-grow: 1; /* This will make all the items grow equally and take up the same amount of space, regardless of their initial size. */
+  height: 100px;
+  background: #254de4;
+  color: #fff;
+  margin: 10px;
+
+  /** Centering the text inside the item, a flexbox item can be also a container **/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
